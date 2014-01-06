@@ -1,0 +1,74 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!--><html class=no-js><!--<![endif]--><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>ZoneSki.com, carte interactive des stations de ski du Québec | App 1</title><meta name=description content=""><meta name=viewport content="width=device-width"><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/vendor.css><link rel=stylesheet href=styles/6cb996f6.main.css><body><!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]--><div id=map></div><div id=container-ctrl><ul id=filters-map class=arrow-close><li><a href=#filtres class=js-reveal>Filtres</a></li><li><a href=#montagnes class=js-reveal>Montagnes</a></li><li><a href=#legende class=js-reveal>Légende</a></li><li><a href=#toogle class="js-reveal ico-arrow"></a></li></ul><div id=filters-content><div id=filtres class="js-reveal-content is-open"><div id=choix-vues><h2 class=section-title>Vues</h2><div class="radio selector-line"><label><input type=radio name=vues data-mode=precipitations7jours value=precipitations7jours><span>Neige 7 jours</span></label></div><div class="radio selector-line"><label><input type=radio name=vues data-mode=precipitations48heures value=precipitations48heures><span>Neige 48h</span></label></div><div class="radio selector-line"><label><input type=radio name=vues data-mode=precipitations24heures value=precipitations24heures><span>Neige 24h</span></label></div><div class="radio selector-line"><label><input type=radio name=vues data-mode=ouverture value=ouverture checked><span>Ouverture</span></label></div></div><h2 class=section-title>Options</h2><div id=choix-skitype><div class="radio ligne selector-line"><label><input type=radio name=skitype value=jour data-skitype=jour><span>Jour</span></label><label><input type=radio name=skitype value=soir data-skitype=soir><span>Soir</span></label></div></div><div class="checkbox selector-line" id=choix-cache-regions><label><input type=checkbox name=cache-region data-status=hidden data-text="{\"visible\" : \"Cacher régions\", \"hidden\" : \"Afficher régions\"}"><span class=js-text>Afficher régions</span></label></div><div class="checkbox selector-line" id=choix-cache-stations><label><input type=checkbox name=cache-stations data-status=hidden data-text="{\"hidden\" : \"Afficher stations fermées\", \"visible\" : \"Cacher stations fermées\"}"><span class=js-text>Afficher stations fermées</span></label></div></div><div id=montagnes class=js-reveal-content style=display:none></div><div id=legende class=js-reveal-content style=display:none><p>Pour naviguer sur la carte, utilisez l’onglet filtre afin de choisir une vue différente. La carte vous affiche l’état et l’enneigement des stations de ski du Québec pour le ski de jour et le ski de soirée automatiquement dès 15h.</p><h2>Onglet Filtres:</h2><h3>Ouverture:</h3><div><img src=http://www.zoneski.com/skimaptw13/icones/ouvert20.png width=30 height=30> <img src=http://www.zoneski.com/skimaptw13/icones/ouvert80.png width=30 height=30> <img src=http://www.zoneski.com/skimaptw13/icones/ouvert100.png width=30 height=30><div>Vous permet d’obtenir l’état des stations de ski, ainsi que de leur % d’ouverture (de 0 à 20%, de 21 à 80%, de 80 à 100%).</div></div><h3>Neige 74h, 48h et 7 jours:</h3><div><img src=http://www.zoneski.com/skimaptw13/icones/dame.png width=30 height=30> <img src=http://www.zoneski.com/skimaptw13/icones/1cm.png width=30 height=30> <img src=http://www.zoneski.com/skimaptw13/icones/10cm.png width=30 height=30> <img src=http://www.zoneski.com/skimaptw13/icones/30cm.png width=30 height=30><div>Vous permet d’obtenir la quantité de nouvelle neige que la station à reçu dans les derniers jours (moins de 5cm, de 5 à 9cm, 10 à 19cm et plus de 20cm).</div></div><h3>Fermeture des stations de ski:</h3><div><img src=http://www.zoneski.com/skimaptw13/icones/ferme.png width=30 height=30> <img src=http://www.zoneski.com/skimaptw13/icones/nd.png width=30 height=30><div>Une montagne rouge indique que le centre de ski est fermé. Une montagne grise indique que ces informations n'ont pas été mise à jour par la station depuis plus de 24h.</div></div><h3>Options:</h3><p>Les options vous permettent de voir ou cacher des options sur la carte comme le nom des régions, les stations qui sont fermées, etc.</p><h3>Onglet Montagnes:</h3><p>Vous pouvez retrouver une station sur la carte en utilisant le sélecteur de stations classées par région. Cliquez sur une région pour l’agrandir sur la carte.</p></div></div></div><div class=partners-bottom-right><a href=http://www.zoneski.com><img src=./images/7da11518.zs_skieur.jpg height=33px></a> <a href=http://www.maneige.com><img src=./images/d41e4e53.assq.jpg height=33px></a></div><script type=text/tpml id=tpml-info-window-day><div class="mod-info-window">
+                    <h2 class="_info-window-title"><#= codepostal #></h2>
+                    <div class="_info-window-quick-links __info-window-section">
+                        <img width="104" height="77" src="http://www.zoneski.com/vivelaneige/2012/sp/<#= vln #>.jpg" alt="Image Station" />
+                        <div class="_info-window-quick-links-right">
+                            <h3><a href="http://www.zoneski.com/vivelaneige/station.php?station=<#= vln #>" target="_blank">GUIDE de la station</a></h3>
+                            <h3><a href="http://www.zoneski.com/rapportss.php?station=<#= vln #>" target="_blank">NOS RAPPORTS</a></h3>
+                        </div>
+                    </div>
+                    <div class="__info-window-section">
+                        <em><#= pistesOuvertesJourForView #></em> piste(s) ouverte(s) de jour sur <strong><#= pistesTotalJour #></strong>
+                    </div>
+                    <ul class="__info-window-section">
+                        <li>Surface de jour : <strong><#= surfacePistesForView #></strong></li>
+                        <li>Base : <strong><#= basePistesForView #></strong></li>
+                        <li>Couverture : <strong><#= couverturePistesForView #></strong></li>
+                    </ul>
+                    <div class="__info-window-section">
+                        Prévisions ski de soirée : <strong><#= pistesOuvertesSoirForView #> sur <#= pistesTotalSoir #></strong>
+                    </div>
+                    <div class="__info-window-section">
+                        <div>
+                            Dernières chute de neige :
+                        </div>
+                        <div>
+                            24h : <strong><#= precipitations24heures #> cm</strong> |
+                            48h : <strong><#= precipitations48heures #> cm</strong> |
+                            7 jours : <strong><#= precipitations7jours #> cm</strong>
+                        </div>
+                    </div>
+                    <div class="__info-window-section">
+                        <small>Mise à jour le : <strong><#= MiseAJour #></strong></small>
+                    </div>
+                </div></script><script type=text/tpml id=tpml-info-window-night><div class="mod-info-window">
+                    <h2 class="_info-window-title"><#= codepostal #></h2>
+                    <div class="_info-window-quick-links __info-window-section">
+                        <img width="104" height="77" src="http://www.zoneski.com/vivelaneige/2012/sp/<#= vln #>.jpg" alt="Image Station" />
+                        <div class="_info-window-quick-links-right">
+                            <h3><a href="http://www.zoneski.com/vivelaneige/station.php?station=<#= vln #>" target="_blank">GUIDE de la station</a></h3>
+                            <h3><a href="http://www.zoneski.com/rapportss.php?station=<#= vln #>" target="_blank">NOS RAPPORTS</a></h3>
+                        </div>
+                    </div>
+                    <div class="__info-window-section">
+                        <em><#= pistesOuvertesSoirForView #></em> piste(s) ouverte(s) ce soir sur <strong><#= pistesTotalSoir #></strong>
+                    </div>
+                    <ul class="__info-window-section">
+                        <li>Surface de soir : <strong><#= surfacePistesForView #></strong></li>
+                        <li>Base : <strong><#= basePistesForView #></strong></li>
+                        <li>Couverture : <strong><#= couverturePistesForView #></strong></li>
+                    </ul>
+                    <div class="__info-window-section">
+                        Prévisions ski en journée : <strong><#= pistesOuvertesJourForView #> sur <#= pistesTotalJour #></strong>
+                    </div>
+                    <div class="__info-window-section">
+                        <div>
+                            Dernières chute de neige :
+                        </div>
+                        <div>
+                            24h : <strong><#= precipitations24heures #> cm</strong> |
+                            48h : <strong><#= precipitations48heures #> cm</strong> |
+                            7 jours : <strong><#= precipitations7jours #> cm</strong>
+                        </div>
+                    </div>
+                    <div class="__info-window-section">
+                        <small>Mise à jour le : <strong><#= MiseAJour #></strong></small>
+                    </div>
+                </div></script><script src="http://maps.google.com/maps/api/js?sensor=false" type=text/javascript></script><script src=http://code.jquery.com/jquery-1.9.1.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src=scripts/e2c8eb6d.main.js></script>
